@@ -228,7 +228,14 @@ _pkginfo.txt
 *.[Cc]ache
 # but keep track of directories ending in .cache
 !?*.[Cc]ache/
-
+# CMake directories
+out/
+ALL_BUILD.*
+CMakeCache.txt
+CMakeFiles/
+ZERO_CHECK.*
+cmake_install.cmake
+Library.dir/
 # Others
 ClientBin/
 ~$*
