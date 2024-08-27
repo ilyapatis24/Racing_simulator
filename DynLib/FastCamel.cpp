@@ -1,8 +1,8 @@
-#include "FastCamel.h"
+п»ї#include "FastCamel.h"
 
 FastCamel::FastCamel()
 {
-    _name = "Верблюд-быстроход";
+    _name = "Р’РµСЂР±Р»СЋРґ-Р±С‹СЃС‚СЂРѕС…РѕРґ";
     _velocityKmh = 40;
     _motionTimeBeforeRestHr = 10;
 }
@@ -13,13 +13,13 @@ double FastCamel::getRestTimeHr(const int distanceKm) const
     double result = 0;
     if (restNumber >= 1)
     {
-        // первый отдых 5 ч.
+        // РїРµСЂРІС‹Р№ РѕС‚РґС‹С… 5 С‡.
         result += 5;
     }
 
     if (restNumber >= 2)
     {
-        // Второй - 6.5 ч, остальные  - 8 ч.
+        // Р’С‚РѕСЂРѕР№ - 6.5 С‡, РѕСЃС‚Р°Р»СЊРЅС‹Рµ  - 8 С‡.
         result += 6.5 + (restNumber - 2) * 8;
     }
 

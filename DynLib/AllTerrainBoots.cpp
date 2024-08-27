@@ -1,8 +1,8 @@
-#include "AllTerrainBoots.h"
+п»ї#include "AllTerrainBoots.h"
 
 AllTerrainBoots::AllTerrainBoots()
 {
-    _name = "Ботинки-вездеходы";
+    _name = "Р‘РѕС‚РёРЅРєРё-РІРµР·РґРµС…РѕРґС‹";
     _velocityKmh = 6;
     _motionTimeBeforeRestHr = 60;
 }
@@ -13,7 +13,7 @@ double AllTerrainBoots::getRestTimeHr(const int distanceKm) const
     double result = 0;
     if (restNumber > 0)
     {
-        // первый отдых 10, остальные 5 часов
+        // РїРµСЂРІС‹Р№ РѕС‚РґС‹С… 10, РѕСЃС‚Р°Р»СЊРЅС‹Рµ 5 С‡Р°СЃРѕРІ
         result += 10 + (restNumber - 1) * 5;
     }
 

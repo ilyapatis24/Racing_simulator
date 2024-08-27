@@ -1,14 +1,14 @@
-#include "Centaur.h"
+п»ї#include "Centaur.h"
 
 Centaur::Centaur()
 {
-    _name = "Кентавр";
+    _name = "РљРµРЅС‚Р°РІСЂ";
     _velocityKmh = 15;
     _motionTimeBeforeRestHr = 8;
 }
 
 double Centaur::getRestTimeHr(const int distanceKm) const
 {
-    // отдыхает 2 ч.
+    // РѕС‚РґС‹С…Р°РµС‚ 2 С‡.
     return 2 * getRestNumber(distanceKm);
 }
